@@ -1,0 +1,15 @@
+$countries = ['Angola','Burma','Butan','Indonesia', 'Antartic'];
+
+sort($countries);
+
+$prevInitial = '';
+foreach ($countries as $country) {
+  $initial = substr($country,0,1);
+  
+  if ($initial != $prevInitial) {
+      echo '<br><strong>'.$initial.'</strong><br>';
+      $prevInitial = $initial;
+  }
+  
+  echo $country.'<br>';
+}
